@@ -1,0 +1,16 @@
+{
+  "home": {
+    "badge": "MVP Foundation",
+    "title": "Tours marketplace frontend is initialized.",
+    "description": "Public browsing, agency workflows, and admin moderation surfaces will be built from this shared Next.js app shell.",
+    "localeLabel": "Current locale",
+    "surfaces": {
+      "public": "Public site",
+      "publicDesc": "Trip discovery, filters, trip detail, and guest lead booking requests.",
+      "agency": "Agency dashboard",
+      "agencyDesc": "Agency profile, trip management, moderation statuses, and lead inbox.",
+      "admin": "Admin dashboard",
+      "adminDesc": "Agency verification, trip moderation queue, ratings moderation, and SLA monitoring."
+    }
+  }
+}
