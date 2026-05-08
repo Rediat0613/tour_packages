@@ -52,7 +52,7 @@ The platform supports domestic Ethiopia and outbound/international tours and tre
  - Backend: `NestJS` API and business logic
  - Three surfaces in V1: public site, agency dashboard, admin dashboard
 - Tech stack
- - Monorepo and package manager: `Nx` + `pnpm`
+ - package manager: `pnpm`
  - Frontend framework: `Next.js` (App Router) + `TypeScript`
  - Frontend server state: `TanStack Query`
  - Frontend client state: `Zustand`

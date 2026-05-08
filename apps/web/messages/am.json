@@ -12,5 +12,75 @@
       "admin": "የአድሚን ዳሽቦርድ",
       "adminDesc": "የኤጀንሲ ማረጋገጫ, የጉዞ ማረጋገጫ ቅድመ ተደራሽ, የደረጃ አሰጣጥ ቁጥጥር እና SLA ክትትል።"
     }
+  },
+  "auth": {
+    "brand": "ExpeditionLocal",
+    "hero": {
+      "quote": "የተለየ ጉዞዎ በአንድ እርምጃ ይጀምራል። ከታመኑ የአካባቢ ባለሙያዎች ጋር ይቀላቀሉ እና የማይረሱ ቦታዎችን በእምነት ያግኙ።",
+      "trust": "በ50,000+ ዓለም አቀፍ ተጓዦች የታመነ"
+    },
+    "login": {
+      "title": "ግባ",
+      "subtitle": "እንኳን ደህና መጡ። የኤጀንሲዎን የስራ ቦታ ይክፈቱ እና የታመኑ የጉዞ ተሞክሮዎችን መገንባት ይቀጥሉ።",
+      "submit": "ግባ",
+      "link": "ግባ",
+      "noAccount": "የኤጀንሲ መለያ ይፈልጋሉ?",
+      "metaTitle": "ግባ",
+      "metaDescription": "ወደ ExpeditionLocal የኤጀንሲ የስራ ቦታዎ ይግቡ።"
+    },
+    "register": {
+      "title": "መለያ ፍጠር",
+      "subtitle": "የአካባቢ ግኝትን ለመምራት የባለሙያ መንገድዎን ዛሬ ይጀምሩ።",
+      "submit": "መለያ ፍጠር",
+      "link": "አዲስ መለያ ፍጠር",
+      "hasAccount": "አስቀድመው መለያ አለዎት?",
+      "metaTitle": "መለያ ፍጠር",
+      "metaDescription": "የ ExpeditionLocal የኤጀንሲ ሰራተኛ መለያ ይፍጠሩ።"
+    },
+    "fields": {
+      "fullName": "ሙሉ ስም",
+      "agencyName": "የኤጀንሲ ስም",
+      "email": "ኢሜይል አድራሻ",
+      "password": "የይለፍ ቃል"
+    },
+    "placeholders": {
+      "fullName": "John Doe",
+      "agencyName": "Highland Tours",
+      "email": "john@example.com",
+      "password": "••••••••"
+    },
+    "terms": {
+      "prefix": "በእነዚህ እስማማለሁ",
+      "terms": "የአገልግሎት ውሎች",
+      "and": "እና",
+      "privacy": "የግላዊነት ፖሊሲ"
+    },
+    "actions": {
+      "showPassword": "የይለፍ ቃል አሳይ",
+      "hidePassword": "የይለፍ ቃል ደብቅ",
+      "signingIn": "በመግባት ላይ...",
+      "creating": "መለያ በመፍጠር ላይ..."
+    },
+    "social": {
+      "continueWith": "ወይም በዚህ ይቀጥሉ",
+      "google": "Google",
+      "facebook": "Facebook",
+      "comingSoon": "ማህበራዊ መግባት በቅርቡ ይመጣል።"
+    },
+    "footer": {
+      "destinations": "መዳረሻዎች",
+      "experiences": "ተሞክሮዎች",
+      "privacy": "የግላዊነት ፖሊሲ",
+      "terms": "የአገልግሎት ውሎች",
+      "copyright": "© 2026 ExpeditionLocal። የአካባቢ ግኝት የባለሙያ መመሪያዎ።"
+    },
+    "errors": {
+      "fullName": "ሙሉ ስምዎን ያስገቡ።",
+      "agencyName": "የኤጀንሲዎን ስም ያስገቡ።",
+      "email": "ትክክለኛ ኢሜይል አድራሻ ያስገቡ።",
+      "passwordMin": "የይለፍ ቃል ቢያንስ 8 ፊደላት መሆን አለበት።",
+      "terms": "ለመቀጠል ውሎቹን መቀበል አለብዎት።",
+      "generic": "ችግር ተፈጥሯል። እባክዎ እንደገና ይሞክሩ።"
+    }
   }
 }

@@ -1,0 +1,171 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  AGENCY_STAFF
+  ADMIN
+}
+
+enum AgencyStatus {
+  PENDING
+  VERIFIED
+  REJECTED
+  SUSPENDED
+}
+
+enum TripStatus {
+  DRAFT
+  SUBMITTED
+  APPROVED
+  REJECTED
+  ARCHIVED
+}
+
+enum TripKind {
+  DOMESTIC
+  INTERNATIONAL
+}
+
+enum TripCategory {
+  RELIGIOUS
+  NON_RELIGIOUS
+}
+
+enum PricingMode {
+  STARTING_FROM
+  CUSTOM_QUOTE
+}
+
+enum LeadStatus {
+  NEW
+  CONTACTED
+  QUOTED
+  CONFIRMED
+  LOST
+}
+
+enum RatingStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum ModerationTargetType {
+  AGENCY
+  TRIP
+  RATING
+}
+
+enum ModerationDecision {
+  APPROVED
+  REJECTED
+}
+
+model User {
+  id           String   @id @default(uuid()) @db.Uuid
+  email        String   @unique
+  passwordHash String
+  fullName     String
+  role         Role
+  agencyId     String?  @db.Uuid
+  agency       Agency?  @relation(fields: [agencyId], references: [id])
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  moderationDecisions ModerationLog[] @relation("ModeratorDecisions")
+}
+
+model Agency {
+  id          String       @id @default(uuid()) @db.Uuid
+  name        String
+  description String?
+  phone       String?
+  email       String?
+  website     String?
+  status      AgencyStatus @default(PENDING)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  staff   User[]
+  trips   Trip[]
+  leads   Lead[]
+  ratings Rating[]
+}
+
+model Trip {
+  id                 String       @id @default(uuid()) @db.Uuid
+  agencyId           String       @db.Uuid
+  agency             Agency       @relation(fields: [agencyId], references: [id])
+  title              String
+  summary            String
+  itinerary          String
+  destinations       String[]
+  durationDays       Int
+  kind               TripKind
+  category           TripCategory
+  religiousTags      String[]
+  pricingMode        PricingMode
+  startingPriceCents Int?
+  currency           String       @default("USD")
+  departureMonths    Int[]
+  inclusions         String[]
+  exclusions         String[]
+  cancellationPolicy String
+  status             TripStatus   @default(DRAFT)
+  submittedAt        DateTime?
+  approvedAt         DateTime?
+  rejectedAt         DateTime?
+  rejectionReason    String?
+  createdAt          DateTime     @default(now())
+  updatedAt          DateTime     @updatedAt
+
+  images  Json       @default("[]")
+  leads   Lead[]
+  ratings Rating[]
+}
+
+model Lead {
+  id                   String     @id @default(uuid()) @db.Uuid
+  tripId               String     @db.Uuid
+  trip                 Trip       @relation(fields: [tripId], references: [id])
+  agencyId             String     @db.Uuid
+  agency               Agency     @relation(fields: [agencyId], references: [id])
+  fullName             String
+  phone                String
+  email                String?
+  numberOfTravelers    Int
+  preferredDates       String
+  nationalityResidence String
+  message              String
+  status               LeadStatus @default(NEW)
+  createdAt            DateTime   @default(now())
+  updatedAt            DateTime   @updatedAt
+}
+
+model Rating {
+  id        String       @id @default(uuid()) @db.Uuid
+  tripId    String       @db.Uuid
+  trip      Trip         @relation(fields: [tripId], references: [id])
+  agencyId  String       @db.Uuid
+  agency    Agency       @relation(fields: [agencyId], references: [id])
+  score     Int
+  status    RatingStatus @default(PENDING)
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+}
+
+model ModerationLog {
+  id          String               @id @default(uuid()) @db.Uuid
+  targetType  ModerationTargetType
+  targetId    String               @db.Uuid
+  decision    ModerationDecision
+  reason      String?
+  moderatorId String               @db.Uuid
+  moderator   User                 @relation("ModeratorDecisions", fields: [moderatorId], references: [id])
+  createdAt   DateTime             @default(now())
+}

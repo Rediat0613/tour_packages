@@ -1,5 +1,6 @@
 "use client";
 
+import {AuthProvider} from "./auth-provider";
 import {QueryProvider} from "./query-provider";
 
 type Props = {
@@ -7,5 +8,9 @@ type Props = {
 };
 
 export function AppProvider({children}: Props) {
-  return <QueryProvider>{children}</QueryProvider>;
+  return (
+    <QueryProvider>
+      <AuthProvider>{children}</AuthProvider>
+    </QueryProvider>
+  );
 }

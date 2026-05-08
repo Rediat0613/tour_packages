@@ -2,27 +2,18 @@
   "name": "tour_packages",
   "version": "0.0.0",
   "private": true,
-  "devDependencies": {
-    "@nx/devkit": "22.6.5",
-    "@nx/eslint": "22.6.5",
-    "@nx/js": "22.6.5",
-    "@nx/next": "22.6.5",
-    "@nx/playwright": "22.6.5",
-    "@playwright/test": "^1.36.0",
-    "@swc-node/register": "~1.11.1",
-    "@swc/cli": "~0.8.0",
-    "@swc/core": "~1.15.5",
-    "@swc/helpers": "~0.5.18",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "nx": "22.6.5",
-    "prettier": "~3.6.2",
-    "tslib": "^2.3.0",
-    "typescript": "~5.9.2"
-  },
-  "dependencies": {
-    "next": "~16.1.6",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+  "scripts": {
+    "dev": "pnpm --dir apps/web dev",
+    "dev:api": "pnpm --dir apps/api start:dev",
+    "dev:web": "pnpm --dir apps/web dev",
+    "build": "pnpm --dir apps/web build",
+    "build:api": "pnpm --dir apps/api build",
+    "build:web": "pnpm --dir apps/web build",
+    "start": "pnpm --dir apps/web start",
+    "start:api": "pnpm --dir apps/api start",
+    "start:web": "pnpm --dir apps/web start",
+    "lint": "pnpm --dir apps/web lint",
+    "lint:api": "pnpm --dir apps/api lint",
+    "lint:web": "pnpm --dir apps/web lint"
   }
 }

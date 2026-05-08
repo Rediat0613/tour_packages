@@ -12,5 +12,75 @@
       "admin": "Admin dashboard",
       "adminDesc": "Agency verification, trip moderation queue, ratings moderation, and SLA monitoring."
     }
+  },
+  "auth": {
+    "brand": "ExpeditionLocal",
+    "hero": {
+      "quote": "Your journey into the extraordinary begins with a single step. Join trusted local experts and discover remarkable places with confidence.",
+      "trust": "Trusted by 50,000+ global travelers"
+    },
+    "login": {
+      "title": "Log in",
+      "subtitle": "Welcome back. Access your agency workspace and continue building trusted tour experiences.",
+      "submit": "Log in",
+      "link": "Log in",
+      "noAccount": "Need an agency account?",
+      "metaTitle": "Log in",
+      "metaDescription": "Log in to manage your ExpeditionLocal agency workspace."
+    },
+    "register": {
+      "title": "Create account",
+      "subtitle": "Start your professional guide to local discovery today.",
+      "submit": "Create account",
+      "link": "Create one",
+      "hasAccount": "Already have an account?",
+      "metaTitle": "Create account",
+      "metaDescription": "Create an ExpeditionLocal agency staff account."
+    },
+    "fields": {
+      "fullName": "Full name",
+      "agencyName": "Agency name",
+      "email": "Email address",
+      "password": "Password"
+    },
+    "placeholders": {
+      "fullName": "John Doe",
+      "agencyName": "Highland Tours",
+      "email": "john@example.com",
+      "password": "••••••••"
+    },
+    "terms": {
+      "prefix": "I agree to the",
+      "terms": "Terms of Service",
+      "and": "and",
+      "privacy": "Privacy Policy"
+    },
+    "actions": {
+      "showPassword": "Show password",
+      "hidePassword": "Hide password",
+      "signingIn": "Logging in...",
+      "creating": "Creating account..."
+    },
+    "social": {
+      "continueWith": "Or continue with",
+      "google": "Google",
+      "facebook": "Facebook",
+      "comingSoon": "Social sign-in is coming soon."
+    },
+    "footer": {
+      "destinations": "Destinations",
+      "experiences": "Experiences",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "copyright": "© 2026 ExpeditionLocal. Your professional guide to local discovery."
+    },
+    "errors": {
+      "fullName": "Enter your full name.",
+      "agencyName": "Enter your agency name.",
+      "email": "Enter a valid email address.",
+      "passwordMin": "Password must be at least 8 characters.",
+      "terms": "You must accept the terms to continue.",
+      "generic": "Something went wrong. Please try again."
+    }
   }
 }
