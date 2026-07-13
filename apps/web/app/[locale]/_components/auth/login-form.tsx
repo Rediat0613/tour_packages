@@ -17,6 +17,7 @@ import { Separator } from "@/components/ui/separator"
 import { authMutations, persistAuth } from "@/app/[locale]/_components/auth/_services"
 import { useAuth } from "@/providers/auth-provider"
 import { cn } from "@/lib/utils"
+import { toast } from "sonner"
 
 type FieldProps = {
   id: string
@@ -56,10 +57,9 @@ export function LoginForm() {
   const router = useRouter()
   const { refreshUser } = useAuth()
   const [showPassword, setShowPassword] = useState(false)
-  const [formError, setFormError] = useState<string | null>(null)
 
   const schema = z.object({
-    email: z.string().email(t("errors.email")),
+    email: z.email(t("errors.email")),
     password: z.string().min(8, t("errors.passwordMin")),
   })
 
@@ -81,12 +81,11 @@ export function LoginForm() {
       router.push(`/${locale}`)
     },
     onError: (error) => {
-      setFormError(error instanceof Error ? error.message : t("errors.generic"))
+      toast.error(error instanceof Error ? error.message : t("errors.generic"))
     },
   })
 
   function onSubmit(values: FormValues) {
-    setFormError(null)
     mutation.mutate(values)
   }
 
@@ -100,7 +99,6 @@ export function LoginForm() {
           {t("login.subtitle")}
         </p>
       </div>
-
       <form className="space-y-5" onSubmit={form.handleSubmit(onSubmit)}>
         <Field
           id="email"
@@ -159,12 +157,6 @@ export function LoginForm() {
             </button>
           </div>
         </Field>
-
-        {formError ? (
-          <p className="rounded-lg bg-destructive/10 px-3 py-2 text-sm font-medium text-destructive">
-            {formError}
-          </p>
-        ) : null}
 
         <Button
           type="submit"
