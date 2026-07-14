@@ -1,16 +1,130 @@
 {
   "home": {
-    "badge": "MVP መሰረት",
-    "title": "የቱርስ ማርኬትፕሌስ frontend ተጀምሯል።",
-    "description": "የህዝብ ግኝት, የኤጀንሲ የስራ ፍሰቶች እና የአድሚን ማረጋገጫ ገፆች ከዚህ የ Next.js መነሻ መዋቅር ላይ ይገነባሉ።",
-    "localeLabel": "አሁን ያለው ቋንቋ",
-    "surfaces": {
-      "public": "የህዝብ ድረ-ገጽ",
-      "publicDesc": "የጉዞ ግኝት, ማጣሪያዎች, የጉዞ ዝርዝር እና የእንግዳ የlead ጥያቄዎች።",
-      "agency": "የኤጀንሲ ዳሽቦርድ",
-      "agencyDesc": "የኤጀንሲ ፕሮፋይል, የጉዞ አስተዳደር, የማረጋገጫ ሁኔታዎች እና የlead መልዕክት ሳጥን።",
-      "admin": "የአድሚን ዳሽቦርድ",
-      "adminDesc": "የኤጀንሲ ማረጋገጫ, የጉዞ ማረጋገጫ ቅድመ ተደራሽ, የደረጃ አሰጣጥ ቁጥጥር እና SLA ክትትል።"
+    "metaTitle": "የአካባቢ ጉዞዎችን ያግኙ",
+    "metaDescription": "በ ExpeditionLocal ከታረጉ የአካባቢ ቱሮች ጋር በኢትዮጵያ እና ከዚያ በላይ ይጆዙ።",
+    "nav": {
+      "destinations": "መዳረሻዎች",
+      "tours": "ጉዞዎች",
+      "experiences": "ተሞክሮዎች",
+      "journal": "ጆርናል",
+      "searchPlaceholder": "የአካባቢ ምስጢሮችን ያስሱ...",
+      "signUp": "ተመዝገብ",
+      "openMenu": "ሜኑ ክፈት",
+      "closeMenu": "ሜኑ ዝጋ",
+      "switchLocale": "EN"
+    },
+    "hero": {
+      "badge": "እትም ቁ. 04 — የኮረብታ ወቅት",
+      "titleBefore": "የኢትዮጵያን",
+      "titleAccent": "የተደበቁ",
+      "titleAfter": "ሪትሞችን ያግኙ።",
+      "subtitle": "ከቱሪስት ካርታዎች ባሻገር ጰሑያማ ከፍታዎች፣ በድንጋይ የተሰሩ መቅደሶች እና ጊዜ በኮረብታ ነፋስ ፍጥነት የሚሂድባቸው ጥንታዊ ጎዳናዎች አሉ።",
+      "ctaPrimary": "መመሪያውን ያስሱ",
+      "ctaSecondary": "የጉዞ እቅዶችን ይመልከቱ",
+      "testimonialName": "ሰላም በቀለ",
+      "testimonialRole": "የአካባቢ አስተናጋጅ",
+      "testimonialQuote": "ምስጢሩ ኢትዮጵያን ማየት ብቻ አይደለም — የቡና ሥነ ሥርዓቱን እና በአፈር ውስጥ ያለውን ታሪክ መቅመስ ነው።"
+    },
+    "search": {
+      "whereLabel": "ወዴት?",
+      "wherePlaceholder": "መዳረሻዎችን ፈልግ...",
+      "whenLabel": "መኜ?",
+      "whenPlaceholder": "ቀናት ይምረጡ",
+      "guestsLabel": "እንግዶች",
+      "guestsPlaceholder": "2 አዋቂዎች",
+      "submit": "ፈልግ"
+    },
+    "trending": {
+      "title": "ታዋቂ መዳረሻዎች",
+      "subtitle": "ለቀጣዩ ጀብዱዎ በጣም የተፈለጉ ቦታዎችን ያስሱ።",
+      "seeAll": "ሁሉንም ይመልከቱ",
+      "popular": "ታዋቂ",
+      "experiences": "{count}+ ተሞክሮዎች",
+      "items": {
+        "lalibela": {
+          "name": "ላሊበላ፣ ኢትዮጵያ",
+          "count": "120"
+        },
+        "simien": {
+          "name": "የስሜን ተራሮች",
+          "count": "85"
+        },
+        "danakil": {
+          "name": "ዳናክል",
+          "count": "64"
+        }
+      }
+    },
+    "featured": {
+      "title": "ተመራጭ ጉዞዎች",
+      "subtitle": "በጉዞ አርታኢዎቻችን የተመረጡ ተሞክሮዎች።",
+      "viewAll": "ሁሉንም ይመልከቱ",
+      "from": "ከ",
+      "reviews": "{count} ግምገማዎች",
+      "badges": {
+        "topRated": "ከፍተኛ ደረጃ",
+        "newExpedition": "አዲስ ጉዞ"
+      },
+      "items": {
+        "lalibela": {
+          "title": "የላሊበላ ቅርስ መንገድ",
+          "duration": "8 ቀናት",
+          "group": "ትንሽ ቡድን (ከፍተኛ 12)"
+        },
+        "simien": {
+          "title": "የስሜን ከፍታ ጉዞ",
+          "duration": "12 ቀናት",
+          "group": "የግል ቡድን"
+        },
+        "danakil": {
+          "title": "የዳናክል በረሃ ኮከብ ጉዞ",
+          "duration": "5 ቀናት",
+          "group": "የጉዞ መሪ"
+        }
+      }
+    },
+    "difference": {
+      "title": "የ ExpeditionLocal ልዩነት",
+      "subtitle": "ጉዞ ትክክለኛ፣ ቀላል እና የማይረሳ መሆን አለበት ብለን እናምናለን። እንዴት እንደምናደርገው እነሆ።",
+      "items": {
+        "vetted": {
+          "title": "የተረጋገጡ የአካባቢ ባለሙያዎች",
+          "description": "እያንዳንዱ መመሪያ ለደህንነት፣ ለእውቀት እና ልዩ የተሞክሮ ትረካዎችን ለማቅረብ ችሎታ በጥብቅ ይረጋገጣል።"
+        },
+        "groups": {
+          "title": "ትንሽ ቡድን ትኩረት",
+          "description": "የግል፣ የተስተካከሉ ግንኙነቶችን እና በስሱ ቦታዎች ላይ ቀላል አሻራ ለማረጋገጥ የቡድን መጠናችንን እንገድባለን።"
+        },
+        "access": {
+          "title": "ልዩ መዳረሻ",
+          "description": "መስሜሮችን ይዝለሉ እና አብዛኛዎቹ መደበኛ ጉዞዎች ማቅረብ የማይችሉትን የተደበቁ ዕንቁዎችን በልዩ መንገድ ይድረሱ።"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "ExpeditionLocal እንዴት ይሰራል",
+      "subtitle": "ቀጣዩን ታላቅ ጀብዱዎን ማስያዛ ቀላል፣ ደህንነቱ የተጠበቀ እና በባለሙያ መድረካችን ሙሉ በሙሉ የሚተዳደር ነው።",
+      "steps": {
+        "discover": {
+          "title": "1. ያግኙ",
+          "description": "በሺዎች የሚቆጠሩ የተረጋገጡ ጉዞዎችን በመዳረሻ፣ በቀን ወይም በፍላጎት አይነት ይፈልጉ።"
+        },
+        "book": {
+          "title": "2. ደህንነቱ የተጠበቀ ቦታ ማስያዛ",
+          "description": "በጥራት ዋስትናችን የተደገፉ ከታመኑ የአካባቢ ኤጀንሲዎች ጋር በደህና ይያዙ።"
+        },
+        "experience": {
+          "title": "3. ይለማመዱ",
+          "description": "ባለሙያ መመሪያዎን ያግኙ እና የማይረሳ የአካባቢ ጉዞ ይጀምሩ።"
+        }
+      }
+    },
+    "footer": {
+      "destinations": "መዳረሻዎች",
+      "experiences": "ተሞክሮዎች",
+      "privacy": "የግላዊነት ፖሊሲ",
+      "terms": "የአገልግሎት ውሎች",
+      "copyright": "© 2026 ExpeditionLocal። የአካባቢ ግኝት የባለሙያ መመሪያዎ።"
     }
   },
   "auth": {

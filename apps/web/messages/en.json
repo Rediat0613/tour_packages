@@ -1,16 +1,130 @@
 {
   "home": {
-    "badge": "MVP Foundation",
-    "title": "Tours marketplace frontend is initialized.",
-    "description": "Public browsing, agency workflows, and admin moderation surfaces will be built from this shared Next.js app shell.",
-    "localeLabel": "Current locale",
-    "surfaces": {
-      "public": "Public site",
-      "publicDesc": "Trip discovery, filters, trip detail, and guest lead booking requests.",
-      "agency": "Agency dashboard",
-      "agencyDesc": "Agency profile, trip management, moderation statuses, and lead inbox.",
-      "admin": "Admin dashboard",
-      "adminDesc": "Agency verification, trip moderation queue, ratings moderation, and SLA monitoring."
+    "metaTitle": "Discover local tours",
+    "metaDescription": "Book verified local tours across Ethiopia and beyond with ExpeditionLocal.",
+    "nav": {
+      "destinations": "Destinations",
+      "tours": "Tours",
+      "experiences": "Experiences",
+      "journal": "Journal",
+      "searchPlaceholder": "Explore local secrets...",
+      "signUp": "Sign Up",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "switchLocale": "አማ"
+    },
+    "hero": {
+      "badge": "Edition No. 04 — Highland Season",
+      "titleBefore": "Discover the",
+      "titleAccent": "Hidden",
+      "titleAfter": "Rhythms of Ethiopia.",
+      "subtitle": "Beyond the tourist maps lie sunlit highlands, rock-hewn sanctuaries, and ancient streets where time moves at the speed of a highland breeze.",
+      "ctaPrimary": "Explore the Guide",
+      "ctaSecondary": "View Itineraries",
+      "testimonialName": "Selam Bekele",
+      "testimonialRole": "Local Curator",
+      "testimonialQuote": "The secret isn't just seeing Ethiopia — it's tasting the coffee ceremony and the history in the soil."
+    },
+    "search": {
+      "whereLabel": "Where to?",
+      "wherePlaceholder": "Search destinations...",
+      "whenLabel": "When?",
+      "whenPlaceholder": "Select Dates",
+      "guestsLabel": "Guests",
+      "guestsPlaceholder": "2 Adults",
+      "submit": "Search"
+    },
+    "trending": {
+      "title": "Trending Destinations",
+      "subtitle": "Explore the most sought-after locations for your next adventure.",
+      "seeAll": "See all",
+      "popular": "Popular",
+      "experiences": "{count}+ Experiences",
+      "items": {
+        "lalibela": {
+          "name": "Lalibela, Ethiopia",
+          "count": "120"
+        },
+        "simien": {
+          "name": "Simien Mountains",
+          "count": "85"
+        },
+        "danakil": {
+          "name": "Danakil Depression",
+          "count": "64"
+        }
+      }
+    },
+    "featured": {
+      "title": "Featured Journeys",
+      "subtitle": "Handpicked experiences by our travel editors.",
+      "viewAll": "View All",
+      "from": "From",
+      "reviews": "{count} reviews",
+      "badges": {
+        "topRated": "Top Rated",
+        "newExpedition": "New Expedition"
+      },
+      "items": {
+        "lalibela": {
+          "title": "The Lalibela Heritage Trail",
+          "duration": "8 Days",
+          "group": "Small Group (Max 12)"
+        },
+        "simien": {
+          "title": "Simien Highlands Expedition",
+          "duration": "12 Days",
+          "group": "Private Group"
+        },
+        "danakil": {
+          "title": "Danakil Desert Star Trek",
+          "duration": "5 Days",
+          "group": "Expedition Lead"
+        }
+      }
+    },
+    "difference": {
+      "title": "The ExpeditionLocal Difference",
+      "subtitle": "We believe travel should be authentic, seamless, and unforgettable. Here's how we make it happen.",
+      "items": {
+        "vetted": {
+          "title": "Vetted Local Experts",
+          "description": "Every guide is rigorously verified for safety, knowledge, and their ability to deliver exceptional narrative experiences."
+        },
+        "groups": {
+          "title": "Small Group Focus",
+          "description": "We cap our group sizes to ensure intimate, personalized interactions and lighter footprints in sensitive locations."
+        },
+        "access": {
+          "title": "Unique Access",
+          "description": "Skip the lines and gain exclusive entry to hidden gems that most standard tours simply cannot provide."
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "How ExpeditionLocal Works",
+      "subtitle": "Booking your next great adventure is simple, secure, and fully managed through our expert platform.",
+      "steps": {
+        "discover": {
+          "title": "1. Discover",
+          "description": "Search thousands of verified tours by destination, date, or interest type."
+        },
+        "book": {
+          "title": "2. Secure Booking",
+          "description": "Book safely with trusted local agencies, backed by our quality guarantee."
+        },
+        "experience": {
+          "title": "3. Experience",
+          "description": "Meet your expert guide and embark on an unforgettable local journey."
+        }
+      }
+    },
+    "footer": {
+      "destinations": "Destinations",
+      "experiences": "Experiences",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "copyright": "© 2026 ExpeditionLocal. Your professional guide to local discovery."
     }
   },
   "auth": {

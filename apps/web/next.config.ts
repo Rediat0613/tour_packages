@@ -9,6 +9,14 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: appRoot,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
+  },
 };
 
 const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
