@@ -196,5 +196,228 @@
       "terms": "You must accept the terms to continue.",
       "generic": "Something went wrong. Please try again."
     }
+  },
+  "tour": {
+    "share": "Share",
+    "save": "Save",
+    "showAllPhotos": "Show all photos",
+    "reviews": "{rating} ({count} reviews)",
+    "itinerary": "Itinerary",
+    "included": "What's Included",
+    "notIncluded": "Not Included",
+    "dayLabel": "Day {day}",
+    "viewProfile": "View Profile",
+    "verifiedExpert": "Verified Local Expert",
+    "booking": {
+      "from": "From",
+      "perPerson": "/person",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "John Doe",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "date": "Date",
+      "datePlaceholder": "Select a date",
+      "guests": "Guests",
+      "guestOption": "{count} Adults",
+      "submit": "Request to Book",
+      "submitting": "Sending request...",
+      "noCharge": "You won't be charged yet",
+      "success": "Booking request sent. An expert will follow up shortly.",
+      "shareSoon": "Sharing is coming soon.",
+      "saved": "Tour saved to your list."
+    },
+    "errors": {
+      "fullName": "Enter your full name.",
+      "phone": "Enter a valid phone number.",
+      "date": "Choose a future travel date.",
+      "guests": "Select at least 1 guest."
+    },
+    "items": {
+      "lalibela": {
+        "title": "Lalibela Wonders",
+        "location": "Lalibela, Ethiopia",
+        "description": "Explore the architectural marvels of the rock-hewn churches of Lalibela, a UNESCO World Heritage site. Walk through sacred tunnels, join a traditional coffee ceremony, and experience the spiritual heart of Ethiopia with a vetted local expert.",
+        "tags": [
+          "Cultural",
+          "Historical",
+          "3 Days"
+        ],
+        "providerName": "Ethio Trekking",
+        "itinerary": {
+          "1": {
+            "title": "Arrival & The Northwestern Churches",
+            "body": "Airport transfer to your hotel, then visit Bete Medhane Alem and Bete Maryam with your local guide."
+          },
+          "2": {
+            "title": "Southeastern Group & St. George",
+            "body": "Explore connecting tunnels, the iconic Bete Giyorgis, and end the day with a traditional coffee ceremony."
+          },
+          "3": {
+            "title": "Asheten Maryam & Departure",
+            "body": "Optional morning hike or mule ride to Asheten Maryam, then transfer to the airport."
+          }
+        },
+        "included": [
+          "Professional local guide",
+          "2 nights accommodation",
+          "Airport transfers",
+          "Entrance fees"
+        ],
+        "notIncluded": [
+          "Flights to/from Lalibela",
+          "Lunch and dinner",
+          "Travel insurance",
+          "Personal expenses"
+        ]
+      },
+      "simien": {
+        "title": "Simien Highlands Expedition",
+        "location": "Simien Mountains, Ethiopia",
+        "description": "Trek the dramatic escarpments of the Simien Mountains National Park. Spot endemic gelada monkeys, camp under highland skies, and follow ridge trails shaped by centuries of wind and stone.",
+        "tags": [
+          "Adventure",
+          "Nature",
+          "12 Days"
+        ],
+        "providerName": "Simien Horizons",
+        "itinerary": {
+          "1": {
+            "title": "Addis to Debark",
+            "body": "Scenic drive north, park briefing, and overnight near the trailhead."
+          },
+          "2": {
+            "title": "Sankaber to Geech",
+            "body": "Full-day highland trek with gelada encounters and waterfall viewpoints."
+          },
+          "3": {
+            "title": "Imet Gogo & Return",
+            "body": "Summit viewpoints at Imet Gogo, then begin the descent toward Debark."
+          }
+        },
+        "included": [
+          "Certified mountain guide",
+          "Park fees and scouts",
+          "Camping equipment",
+          "Trail meals"
+        ],
+        "notIncluded": [
+          "International flights",
+          "Sleeping bag rental",
+          "Tips for guides",
+          "Personal trekking gear"
+        ]
+      },
+      "danakil": {
+        "title": "Danakil Desert Star Trek",
+        "location": "Danakil Depression, Ethiopia",
+        "description": "Journey into one of Earth's most extreme landscapes. Witness sulfur springs at Dallol, camel caravans at Lake Assale, and a night sky untouched by city light.",
+        "tags": [
+          "Expedition",
+          "Desert",
+          "5 Days"
+        ],
+        "providerName": "Danakil Expeditions",
+        "itinerary": {
+          "1": {
+            "title": "Mekelle to Hamedela",
+            "body": "Desert convoy briefing and transfer into the Danakil basin."
+          },
+          "2": {
+            "title": "Dallol & Color Fields",
+            "body": "Explore acid ponds, salt formations, and mineral terraces with local Afar guides."
+          },
+          "3": {
+            "title": "Lake Assale Sunrise",
+            "body": "Sunrise over the salt flats, camel caravan visit, and return toward Mekelle."
+          }
+        },
+        "included": [
+          "Expedition lead and local scouts",
+          "4x4 desert transport",
+          "Camping and water",
+          "Permits"
+        ],
+        "notIncluded": [
+          "Flights to Mekelle",
+          "Alcoholic beverages",
+          "Travel insurance",
+          "Personal satellite device"
+        ]
+      }
+    }
+  },
+  "agency": {
+    "verified": "Verified Agency",
+    "reviews": "{rating} ({count} reviews)",
+    "messageAgency": "Message Agency",
+    "about": "About the Agency",
+    "specialties": "Specialties",
+    "toursOffered": "Tours Offered",
+    "viewAll": "View all",
+    "from": "From",
+    "contact": "Contact Details",
+    "phone": "Phone",
+    "phoneHours": "Mon–Fri, 9am–6pm (EAT)",
+    "email": "Email",
+    "officeLocation": "Office Location",
+    "visitWebsite": "Visit Website",
+    "messageSoon": "Messaging is coming soon.",
+    "mapLabel": "Map preview",
+    "items": {
+      "ethioguide": {
+        "name": "EthioGuide Experts",
+        "tagline": "Deep-culture journeys across historic Ethiopia",
+        "about": [
+          "With over a decade of experience, EthioGuide Experts specializes in crafting unforgettable, authentic journeys across the diverse landscapes of Ethiopia. From the historical marvels of Lalibela to the breathtaking vistas of the Danakil Depression, our local guides ensure deep cultural immersion and unparalleled safety.",
+          "We believe in sustainable tourism that benefits local communities while providing our guests with premium, high-end expedition experiences. Our meticulously planned itineraries balance adventure with comfort, ensuring every trip is a masterpiece of discovery."
+        ],
+        "specialties": [
+          "Historical Tours",
+          "Trekking",
+          "Cultural Immersion",
+          "Wildlife"
+        ],
+        "location": [
+          "Bole Road, Dembel City Center",
+          "Addis Ababa, Ethiopia"
+        ]
+      },
+      "simien-horizons": {
+        "name": "Simien Horizons",
+        "tagline": "High-altitude treks led by certified mountain guides",
+        "about": [
+          "Simien Horizons is a specialist trekking outfitter born in the highlands of northern Ethiopia. Our certified mountain guides have logged thousands of kilometres across the Simien Mountains National Park, sharing its endemic wildlife and dramatic escarpments with travellers from around the world.",
+          "Small groups, strong ethics, and a deep respect for the land define every expedition. We handle permits, scouts, and camp logistics so you can focus on the ridgelines ahead."
+        ],
+        "specialties": [
+          "Trekking",
+          "Wildlife",
+          "Camping",
+          "Photography"
+        ],
+        "location": [
+          "Piassa, Gondar Road",
+          "Gondar, Ethiopia"
+        ]
+      },
+      "danakil-expeditions": {
+        "name": "Danakil Expeditions",
+        "tagline": "Desert convoys into the lowest place on Earth",
+        "about": [
+          "Danakil Expeditions runs guided convoys into one of the planet's most extreme landscapes. Working hand-in-hand with local Afar communities, we bring travellers safely to the sulfur fields of Dallol, the salt caravans of Lake Assale, and skies untouched by city light.",
+          "Safety and local partnership are non-negotiable. Every expedition includes seasoned scouts, reliable 4x4 transport, and a support team that knows the desert intimately."
+        ],
+        "specialties": [
+          "Expedition",
+          "Desert",
+          "Geology",
+          "Adventure"
+        ],
+        "location": [
+          "Ayder, Main Street",
+          "Mekelle, Ethiopia"
+        ]
+      }
+    }
   }
 }

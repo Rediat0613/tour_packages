@@ -72,68 +72,71 @@ export async function LandingFeatured() {
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {JOURNEYS.map((journey) => (
-            <article
+            <Link
               key={journey.key}
+              href={`/${locale}/tour/${journey.key}`}
               className="group overflow-hidden rounded-2xl bg-card shadow-[0_16px_40px_rgb(11_28_48/6%)] ring-1 ring-border/40 transition-shadow hover:shadow-[0_20px_44px_rgb(11_28_48/10%)]"
             >
-              <div className="relative aspect-16/10 overflow-hidden">
-                <Image
-                  src={journey.image}
-                  alt=""
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 33vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                {journey.badge ? (
-                  <span
-                    className={
-                      journey.badge === "topRated"
-                        ? "absolute top-3 left-3 rounded-full bg-[#009485] px-2.5 py-1 text-[11px] font-bold tracking-wide text-white uppercase"
-                        : "absolute top-3 left-3 rounded-full bg-secondary px-2.5 py-1 text-[11px] font-bold tracking-wide text-white uppercase"
-                    }
-                  >
-                    {t(`badges.${journey.badge}`)}
-                  </span>
-                ) : null}
-              </div>
-
-              <div className="flex flex-col gap-3 p-5">
-                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-medium text-muted-foreground">
-                  <span className="inline-flex items-center gap-1.5">
-                    <Clock3 className="size-3.5" aria-hidden />
-                    {t(`items.${journey.key}.duration`)}
-                  </span>
-                  <span aria-hidden>•</span>
-                  <span className="inline-flex items-center gap-1.5">
-                    <Users className="size-3.5" aria-hidden />
-                    {t(`items.${journey.key}.group`)}
-                  </span>
-                </div>
-
-                <h3 className="text-lg font-bold tracking-tight text-primary">
-                  {t(`items.${journey.key}.title`)}
-                </h3>
-
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Stars rating={journey.rating} />
-                  <span>
-                    {journey.rating}{" "}
-                    <span className="text-muted-foreground/80">
-                      ({t("reviews", { count: journey.reviews })})
+              <article>
+                <div className="relative aspect-16/10 overflow-hidden">
+                  <Image
+                    src={journey.image}
+                    alt=""
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  {journey.badge ? (
+                    <span
+                      className={
+                        journey.badge === "topRated"
+                          ? "absolute top-3 left-3 rounded-full bg-[#009485] px-2.5 py-1 text-[11px] font-bold tracking-wide text-white uppercase"
+                          : "absolute top-3 left-3 rounded-full bg-secondary px-2.5 py-1 text-[11px] font-bold tracking-wide text-white uppercase"
+                      }
+                    >
+                      {t(`badges.${journey.badge}`)}
                     </span>
-                  </span>
+                  ) : null}
                 </div>
 
-                <div className="mt-1 flex items-end justify-between border-t border-border/50 pt-4">
-                  <span className="text-xs font-semibold tracking-wide text-muted-foreground uppercase">
-                    {t("from")}
-                  </span>
-                  <span className="text-xl font-extrabold tracking-tight text-primary">
-                    {journey.price}
-                  </span>
+                <div className="flex flex-col gap-3 p-5">
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-medium text-muted-foreground">
+                    <span className="inline-flex items-center gap-1.5">
+                      <Clock3 className="size-3.5" aria-hidden />
+                      {t(`items.${journey.key}.duration`)}
+                    </span>
+                    <span aria-hidden>•</span>
+                    <span className="inline-flex items-center gap-1.5">
+                      <Users className="size-3.5" aria-hidden />
+                      {t(`items.${journey.key}.group`)}
+                    </span>
+                  </div>
+
+                  <h3 className="text-lg font-bold tracking-tight text-primary">
+                    {t(`items.${journey.key}.title`)}
+                  </h3>
+
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <Stars rating={journey.rating} />
+                    <span>
+                      {journey.rating}{" "}
+                      <span className="text-muted-foreground/80">
+                        ({t("reviews", { count: journey.reviews })})
+                      </span>
+                    </span>
+                  </div>
+
+                  <div className="mt-1 flex items-end justify-between border-t border-border/50 pt-4">
+                    <span className="text-xs font-semibold tracking-wide text-muted-foreground uppercase">
+                      {t("from")}
+                    </span>
+                    <span className="text-xl font-extrabold tracking-tight text-primary">
+                      {journey.price}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </Link>
           ))}
         </div>
       </div>
